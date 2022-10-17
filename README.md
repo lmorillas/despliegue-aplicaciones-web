@@ -1,8 +1,8 @@
-# Introducción a Python
+# Despliegue de Aplicaciones Web
 
-## Recursos DWES
+## Recursos DAW
 
 Recursos para el aula
 
 
-https://lmorillas.github.io/intro-python
+https://lmorillas.github.io/despliegue-aplicaciones-web

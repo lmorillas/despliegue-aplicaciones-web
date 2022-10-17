@@ -54,7 +54,7 @@ anchor = "smart"
 
 [languages]
 [languages.es]
-title = "Desplieque de Aplicaciones Web"
+title = "Despliegue de Aplicaciones Web"
 description = "Documentación Módulo DAW"
 languageName ="Castellano"
 # Weight used for sorting.

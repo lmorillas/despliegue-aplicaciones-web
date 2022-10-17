@@ -1,0 +1,125 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Despliegue de Aplicaciones Web – Despliegue de Aplicaciones Web</title>
+    <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/</link>
+    <description>Recent content on Despliegue de Aplicaciones Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Entorno - Vagrant</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h3 id=&#34;objetivos&#34;&gt;Objetivos:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;¿Cómo podemos tener un sistema para desarrollar una aplicación que sea el mismo que se va a usar en producción?&lt;/li&gt;
+&lt;li&gt;¿Cómo replicar un servidor si tenemos que moverlo a otra máquina? ¿Hay que hacerlo a mano perdiendo varias horas y arriesgándonos a cometer errores?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;De &lt;strong&gt;virtualización&lt;/strong&gt; y de &lt;strong&gt;Virtualbox&lt;/strong&gt; ya habéis oído hablar en el módulo de sistemas operativos.&lt;/p&gt;
+&lt;h2 id=&#34;virtualización---virtualbox---vagrant&#34;&gt;Virtualización - Virtualbox - Vagrant&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Virtualization&#34;&gt;https://en.wikipedia.org/wiki/Virtualization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduccíón-a-virtualbox&#34;&gt;Introduccíón a Virtualbox&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.oracle.com/es/virtualization/virtualbox/&#34;&gt;https://www.oracle.com/es/virtualization/virtualbox/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.oracle.com/a/ocom/docs/virtualbox-for-dummies.pdf&#34;&gt;https://www.oracle.com/a/ocom/docs/virtualbox-for-dummies.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introducción-a-vagrant&#34;&gt;Introducción a Vagrant&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lectura recomendada: &lt;a href=&#34;https://automationrhapsody.com/what-is-vagrant-and-why-to-use-it/&#34;&gt;https://automationrhapsody.com/what-is-vagrant-and-why-to-use-it/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;https://www.vagrantup.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://desarrolloweb.com/articulos/trabajar-con-vagrant.html&#34;&gt;https://desarrolloweb.com/articulos/trabajar-con-vagrant.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Vagrant&lt;/strong&gt; es una herramienta para construir y administrar entornos de máquinas virtuales.&lt;/p&gt;
+&lt;p&gt;Con un flujo de trabajo fácil de usar y un enfoque en la automatización, Vagrant reduce el tiempo de configuración del entorno de desarrollo, aumenta la paridad de producción y hace que la excusa &amp;ldquo;funciona en mi máquina&amp;rdquo; sea una reliquia del pasado. Vagrant es conveniente para compartir la configuración y configuración del entorno virtual.&lt;/p&gt;
+&lt;p&gt;Vagrant &lt;strong&gt;no proporciona motores de virtualización&lt;/strong&gt;, sino que se basa en otros:  VirtualBox (proveedor predeterminado), VMWare , Hyper-V o Docker.&lt;/p&gt;
+&lt;p&gt;Con Vagrant podemos instalar y activar una máquina virtual, configurarla e instala el software necesario. Todas esas acciones se describen en un solo archivo de texto (&lt;code&gt;Vagrantfile&lt;/code&gt;), que se puede compartir entre los miembros del equipo, lo que permite que todos tengan la misma configuración.&lt;/p&gt;
+&lt;p&gt;Vagrant permite compartir configuraciones entre los miembros del equipo para facilitar la puesta en marcha de un entorno de trabajo.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Práctica - Vagrant</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/practica-vagrant/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/practica-vagrant/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h3 id=&#34;objetivos&#34;&gt;Objetivos:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Instalar una máquina básica usando Vagrant - Virtualbox&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;requisitos&#34;&gt;Requisitos&lt;/h2&gt;
+&lt;p&gt;Instala Virtualbox y Vagrant en tu máquina&lt;/p&gt;
+&lt;h2 id=&#34;instalar-una-máquina-ubuntu-2204&#34;&gt;Instalar una máquina Ubuntu 22.04&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Crea un directorio para tu proyecto&lt;/li&gt;
+&lt;li&gt;Dentro de ese diretorio ejecuta:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vagrant init bento/ubuntu-22.04
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Revisa el contenido del archivo &lt;code&gt;Vagrantfile&lt;/code&gt; que se ha creado&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Pon en marcha la máquina virtual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;gt;&lt;/span&gt; vagrant up
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Revisa el contenido del log para ver que todo ha funcionado correctamente&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Conecta por ssh con la máquina virtual creada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;gt;&lt;/span&gt; vagrant ssh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Comprueba el contenido del directorio &lt;code&gt;/vagrant&lt;/code&gt; de la máquina virtual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ls /vagrant
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Vagrant de forma automática mapea el directorio local de la máquina host con el directorio &lt;code&gt;/vagrant&lt;/code&gt; de la máquina virtual&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Sal de la máquina virtual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ exit&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Apaga la máquina virtual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;gt;&lt;/span&gt; vagrant halt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>
