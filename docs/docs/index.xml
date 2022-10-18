@@ -62,6 +62,44 @@
     </item>
     
     <item>
+      <title>Docs: Git - Gestores de versiones</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/git-versiones/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/git-versiones/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h3 id=&#34;objetivos&#34;&gt;Objetivos:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Repaso gestores de versiones de código.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;recursos&#34;&gt;Recursos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introducción de Mozilla: &lt;a href=&#34;https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/GitHub&#34;&gt;https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chuleta sencilla: &lt;a href=&#34;https://training.github.com/downloads/es_ES/github-git-cheat-sheet/&#34;&gt;https://training.github.com/downloads/es_ES/github-git-cheat-sheet/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Guía sencilla: &lt;a href=&#34;https://rogerdudler.github.io/git-guide/index.es.html&#34;&gt;https://rogerdudler.github.io/git-guide/index.es.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Documentación del MIT: &lt;a href=&#34;https://missing.csail.mit.edu/2020/version-control/&#34;&gt;https://missing.csail.mit.edu/2020/version-control/&lt;/a&gt; (en castellano: &lt;a href=&#34;https://missing-semester-esp.github.io/2020/version-control-esp/&#34;&gt;https://missing-semester-esp.github.io/2020/version-control-esp/&lt;/a&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;secuencia&#34;&gt;Secuencia&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lee la introducción de Mozilla.&lt;/li&gt;
+&lt;li&gt;Instala git en tu ordenador.&lt;/li&gt;
+&lt;li&gt;Crea una cuenta en &lt;a href=&#34;https://github.com&#34;&gt;https://github.com&lt;/a&gt; si no la tienes.&lt;/li&gt;
+&lt;li&gt;Completa la actividad sobre git / github de este curso&lt;/li&gt;
+&lt;li&gt;El resto de la documentación te servirá para ampliar y resolver dudas.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Práctica - Vagrant</title>
       <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/practica-vagrant/</link>
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
