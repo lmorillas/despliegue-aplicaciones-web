@@ -74,6 +74,12 @@
 &lt;li&gt;Comprueba que está funcionando el servidor Apache desde navegador.&lt;/li&gt;
 &lt;li&gt;Comprueba que está funcionando el servidor Apache desde terminal.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;requisitos&#34;&gt;Requisitos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tener instalado Virtualbox y Vagrant en tu máquina.&lt;/li&gt;
+&lt;li&gt;Tener instalado el cliente de git.&lt;/li&gt;
+&lt;li&gt;Si no has escrito antes en Markdown, echa un vistazo a una guía de Markdown, por ejemplo &lt;a href=&#34;https://www.markdownguide.org/basic-syntax/&#34;&gt;esta&lt;/a&gt; o la guía de &lt;a href=&#34;https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax&#34;&gt;GitHub&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;documentación-a-entregar&#34;&gt;Documentación a entregar&lt;/h2&gt;
 &lt;p&gt;Guía de instalación de apache con los comandos que has usado y capturas de pantalla de la página web estática. Usa el archivo &amp;lsquo;Install.md` que hay en el repositorio de la práctica.&lt;/p&gt;
 &lt;p&gt;La práctica se evaluará como correcta o no correcta.&lt;/p&gt;
