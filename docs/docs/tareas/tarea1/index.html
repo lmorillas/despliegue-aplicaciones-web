@@ -18,36 +18,26 @@
 <link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-192x192.png" sizes="192x192">
 
-<title>Sesión http típica | Despliegue de Aplicaciones Web</title>
-<meta name="description" content="
-
-
-Documentación
-
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Session
-
-
-
-
-
-Establecer conexión
-Enviar ls petición del cliente
-
-Importante: …">
-<meta property="og:title" content="Sesión http típica" />
-<meta property="og:description" content=" Documentación https://developer.mozilla.org/en-US/docs/Web/HTTP/Session Establecer conexión Enviar ls petición del cliente Importante: métodos Respuesta del servidor Códigos de estado Tarea Lee el recurso Compruébalo con las DevTools Código 301 -&gt; http://cpilosenlaces.com/ Código 200 -&gt; https://cpilosenlaces.com/ Código 404 -&gt; https://cpilosenlaces.com/paginaquenoexiste " />
+<title>Instalar Apache | Despliegue de Aplicaciones Web</title>
+<meta name="description" content="Instalación básica de Apache
+">
+<meta property="og:title" content="Instalar Apache" />
+<meta property="og:description" content="Instalación básica de Apache
+" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/sesion/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2021-10-21T10:36:54+02:00" />
-<meta property="article:modified_time" content="2022-10-25T10:59:56+02:00" /><meta property="og:site_name" content="Despliegue de Aplicaciones Web" />
+<meta property="og:url" content="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/tareas/tarea1/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2021-09-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-15T00:00:00+00:00" /><meta property="og:site_name" content="Despliegue de Aplicaciones Web" />
 
-<meta itemprop="name" content="Sesión http típica">
-<meta itemprop="description" content=" Documentación https://developer.mozilla.org/en-US/docs/Web/HTTP/Session Establecer conexión Enviar ls petición del cliente Importante: métodos Respuesta del servidor Códigos de estado Tarea Lee el recurso Compruébalo con las DevTools Código 301 -&gt; http://cpilosenlaces.com/ Código 200 -&gt; https://cpilosenlaces.com/ Código 404 -&gt; https://cpilosenlaces.com/paginaquenoexiste "><meta itemprop="datePublished" content="2021-10-21T10:36:54+02:00" />
-<meta itemprop="dateModified" content="2022-10-25T10:59:56+02:00" />
-<meta itemprop="wordCount" content="37">
+<meta itemprop="name" content="Instalar Apache">
+<meta itemprop="description" content="Instalación básica de Apache
+"><meta itemprop="datePublished" content="2021-09-15T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-09-15T00:00:00+00:00" />
+<meta itemprop="wordCount" content="99">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Sesión http típica"/>
-<meta name="twitter:description" content=" Documentación https://developer.mozilla.org/en-US/docs/Web/HTTP/Session Establecer conexión Enviar ls petición del cliente Importante: métodos Respuesta del servidor Códigos de estado Tarea Lee el recurso Compruébalo con las DevTools Código 301 -&gt; http://cpilosenlaces.com/ Código 200 -&gt; https://cpilosenlaces.com/ Código 404 -&gt; https://cpilosenlaces.com/paginaquenoexiste "/>
+<meta name="twitter:title" content="Instalar Apache"/>
+<meta name="twitter:description" content="Instalación básica de Apache
+"/>
 
 
 
@@ -119,8 +109,8 @@ Importante: …">
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-despliegue-aplicaciones-webdocsteoria-web-li">
-  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-web-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-despliegue-aplicaciones-webdocsteoria-web-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-web-check"/>
   <label for="m-despliegue-aplicaciones-webdocsteoria-web-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsteoria-web"><span class="">Teoría Web</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -148,9 +138,9 @@ Importante: …">
   <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webmensajes-check"/>
   <label for="m-despliegue-aplicaciones-webdocsteoria-webmensajes-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/mensajes/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webmensajes"><span class="">Mensajes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-despliegue-aplicaciones-webdocsteoria-websesion-li">
-  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-websesion-check" checked/>
-  <label for="m-despliegue-aplicaciones-webdocsteoria-websesion-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/sesion/" title="Sesión http típica" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-websesion"><span class="td-sidebar-nav-active-item">Sesión</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-websesion-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-websesion-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-websesion-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/sesion/" title="Sesión http típica" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-websesion"><span class="">Sesión</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet-li">
   <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet-check"/>
@@ -158,14 +148,14 @@ Importante: …">
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-despliegue-aplicaciones-webdocstareas-li">
-  <input type="checkbox" id="m-despliegue-aplicaciones-webdocstareas-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-despliegue-aplicaciones-webdocstareas-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocstareas-check" checked/>
   <label for="m-despliegue-aplicaciones-webdocstareas-check"><a href="/despliegue-aplicaciones-web/docs/tareas/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocstareas"><span class="">Tareas</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocstareastarea1-li">
-  <input type="checkbox" id="m-despliegue-aplicaciones-webdocstareastarea1-check"/>
-  <label for="m-despliegue-aplicaciones-webdocstareastarea1-check"><a href="/despliegue-aplicaciones-web/docs/tareas/tarea1/" title="Instalar Apache" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocstareastarea1"><span class="">Apache (1)</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-despliegue-aplicaciones-webdocstareastarea1-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocstareastarea1-check" checked/>
+  <label for="m-despliegue-aplicaciones-webdocstareastarea1-check"><a href="/despliegue-aplicaciones-web/docs/tareas/tarea1/" title="Instalar Apache" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocstareastarea1"><span class="td-sidebar-nav-active-item">Apache (1)</span></a></label>
   
 </li>
   </ul>
@@ -215,17 +205,17 @@ Importante: …">
     <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/">DAW</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/">Teoría Web</a>
+    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/tareas/">Tareas</a>
   </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/sesion/" aria-disabled="true" class="btn-link disabled">Sesión</a>
+    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/tareas/tarea1/" aria-disabled="true" class="btn-link disabled">Apache (1)</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Sesión http típica</h1>
-	
+	<h1>Instalar Apache</h1>
+	<div class="lead">Instalación básica de Apache</div>
 	<header class="article-meta">
 		
 
@@ -244,43 +234,26 @@ Importante: …">
 	
 
 <div class="pageinfo pageinfo-primary">
-<h2 id="documentación">Documentación</h2>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Session">https://developer.mozilla.org/en-US/docs/Web/HTTP/Session</a></li>
-</ul>
+<p>Unidad: 1</p>
+<p>Ciclo formativo y módulo: Desarrollo de Aplicaciones Web - Despliegue de Aplicaciones Web</p>
 
 </div>
 
+<h2 id="objetivo">Objetivo</h2>
+<p>En tu máquina virtualizada con Vagrant (Ubuntu 22.04):</p>
 <ul>
-<li>Establecer conexión</li>
-<li>Enviar ls petición del cliente
-<ul>
-<li>Importante: métodos</li>
+<li>Instala el servidor web Apache desde terminal.</li>
+<li>Crea una página web estática para que puedas vela con el navegador y colócala como <code>index.html</code> de apache.</li>
+<li>Comprueba que está funcionando el servidor Apache desde navegador.</li>
+<li>Comprueba que está funcionando el servidor Apache desde terminal.</li>
 </ul>
-</li>
-<li>Respuesta del servidor
-<ul>
-<li>Códigos de estado</li>
-</ul>
-</li>
-</ul>
-<h2 id="tarea">Tarea</h2>
-<ul>
-<li>Lee el recurso</li>
-</ul>
-<h2 id="compruébalo-con-las-devtools">Compruébalo con las DevTools</h2>
-<ul>
-<li>Código 301 -&gt; <a href="http://cpilosenlaces.com/">http://cpilosenlaces.com/</a></li>
-<li>Código 200 -&gt; <a href="https://cpilosenlaces.com/">https://cpilosenlaces.com/</a></li>
-<li>Código 404 -&gt; <a href="https://cpilosenlaces.com/paginaquenoexiste">https://cpilosenlaces.com/paginaquenoexiste</a></li>
-</ul>
+<h2 id="documentación-a-entregar">Documentación a entregar</h2>
+<p>Guía de instalación de apache con los comandos que has usado y capturas de pantalla de la página web estática.</p>
+<p>La práctica se evaluará como correcta o no correcta.</p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">
-  Última modificación October 25, 2022: <a href="https://github.com/lmorillas/dwes/commit/642f986edca5ac22606dc96bea559617a915b98c">teoria http (642f986)</a>
-</div>
-
+	
 </div>
 
 

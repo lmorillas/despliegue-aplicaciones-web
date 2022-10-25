@@ -1,0 +1,50 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Despliegue de Aplicaciones Web – Tareas</title>
+    <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/tareas/</link>
+    <description>Recent content in Tareas on Despliegue de Aplicaciones Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/tareas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Instalar Apache</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/tareas/tarea1/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/tareas/tarea1/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Unidad: 1&lt;/p&gt;
+&lt;p&gt;Ciclo formativo y módulo: Desarrollo de Aplicaciones Web - Despliegue de Aplicaciones Web&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;objetivo&#34;&gt;Objetivo&lt;/h2&gt;
+&lt;p&gt;En tu máquina virtualizada con Vagrant (Ubuntu 22.04):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instala el servidor web Apache desde terminal.&lt;/li&gt;
+&lt;li&gt;Crea una página web estática para que puedas vela con el navegador y colócala como &lt;code&gt;index.html&lt;/code&gt; de apache.&lt;/li&gt;
+&lt;li&gt;Comprueba que está funcionando el servidor Apache desde navegador.&lt;/li&gt;
+&lt;li&gt;Comprueba que está funcionando el servidor Apache desde terminal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;documentación-a-entregar&#34;&gt;Documentación a entregar&lt;/h2&gt;
+&lt;p&gt;Guía de instalación de apache con los comandos que has usado y capturas de pantalla de la página web estática.&lt;/p&gt;
+&lt;p&gt;La práctica se evaluará como correcta o no correcta.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
