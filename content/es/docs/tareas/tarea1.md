@@ -24,6 +24,6 @@ En tu máquina virtualizada con Vagrant (Ubuntu 22.04):
 
 ## Documentación a entregar
 
-Guía de instalación de apache con los comandos que has usado y capturas de pantalla de la página web estática. 
+Guía de instalación de apache con los comandos que has usado y capturas de pantalla de la página web estática. Usa el archivo 'Install.md` que hay en el repositorio de la práctica.
 
 La práctica se evaluará como correcta o no correcta.

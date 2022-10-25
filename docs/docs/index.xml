@@ -75,7 +75,7 @@
 &lt;li&gt;Comprueba que está funcionando el servidor Apache desde terminal.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;documentación-a-entregar&#34;&gt;Documentación a entregar&lt;/h2&gt;
-&lt;p&gt;Guía de instalación de apache con los comandos que has usado y capturas de pantalla de la página web estática.&lt;/p&gt;
+&lt;p&gt;Guía de instalación de apache con los comandos que has usado y capturas de pantalla de la página web estática. Usa el archivo &amp;lsquo;Install.md` que hay en el repositorio de la práctica.&lt;/p&gt;
 &lt;p&gt;La práctica se evaluará como correcta o no correcta.&lt;/p&gt;
 
       </description>
