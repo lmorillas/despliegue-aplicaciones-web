@@ -4,7 +4,8 @@ title: "Entorno - Vagrant"
 linkTitle: "Vagrant"
 weight: 5
 date: 2021-09-15
-description: 
+description: >
+    Configuración del entorno de trabajo básico con Vagrant y VirtualBox
   
 ---
 

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.102.3" />
+<link rel="alternate" type="application/rss&#43;xml" href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -18,31 +19,21 @@
 <link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-192x192.png" sizes="192x192">
 
-<title>Entorno - Vagrant | Despliegue de Aplicaciones Web</title>
-<meta name="description" content="
+<title>Entorno | Despliegue de Aplicaciones Web</title>
+<meta name="description" content="Configuración del entorno de trabajo básico
+">
+<meta property="og:title" content="Entorno" />
+<meta property="og:description" content="Configuración del entorno de trabajo básico
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/" /><meta property="og:site_name" content="Despliegue de Aplicaciones Web" />
 
-
-Objetivos:
-
-¿Cómo podemos tener un sistema para desarrollar una aplicación que sea el mismo que se va a usar en producción?
-¿Cómo replicar un …">
-<meta property="og:title" content="Entorno - Vagrant" />
-<meta property="og:description" content="Objetivos: ¿Cómo podemos tener un sistema para desarrollar una aplicación que sea el mismo que se va a usar en producción? ¿Cómo replicar un servidor si tenemos que moverlo a otra máquina? ¿Hay que hacerlo a mano perdiendo varias horas y arriesgándonos a cometer errores? De virtualización y de Virtualbox ya habéis oído hablar en el módulo de sistemas operativos.
-Virtualización - Virtualbox - Vagrant https://en.wikipedia.org/wiki/Virtualization Introduccíón a Virtualbox https://www." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2021-09-15T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-10-17T16:07:17+02:00" /><meta property="og:site_name" content="Despliegue de Aplicaciones Web" />
-
-<meta itemprop="name" content="Entorno - Vagrant">
-<meta itemprop="description" content="Objetivos: ¿Cómo podemos tener un sistema para desarrollar una aplicación que sea el mismo que se va a usar en producción? ¿Cómo replicar un servidor si tenemos que moverlo a otra máquina? ¿Hay que hacerlo a mano perdiendo varias horas y arriesgándonos a cometer errores? De virtualización y de Virtualbox ya habéis oído hablar en el módulo de sistemas operativos.
-Virtualización - Virtualbox - Vagrant https://en.wikipedia.org/wiki/Virtualization Introduccíón a Virtualbox https://www."><meta itemprop="datePublished" content="2021-09-15T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-10-17T16:07:17+02:00" />
-<meta itemprop="wordCount" content="231">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Entorno - Vagrant"/>
-<meta name="twitter:description" content="Objetivos: ¿Cómo podemos tener un sistema para desarrollar una aplicación que sea el mismo que se va a usar en producción? ¿Cómo replicar un servidor si tenemos que moverlo a otra máquina? ¿Hay que hacerlo a mano perdiendo varias horas y arriesgándonos a cometer errores? De virtualización y de Virtualbox ya habéis oído hablar en el módulo de sistemas operativos.
-Virtualización - Virtualbox - Vagrant https://en.wikipedia.org/wiki/Virtualization Introduccíón a Virtualbox https://www."/>
+<meta itemprop="name" content="Entorno">
+<meta itemprop="description" content="Configuración del entorno de trabajo básico
+"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Entorno"/>
+<meta name="twitter:description" content="Configuración del entorno de trabajo básico
+"/>
 
 
 
@@ -56,7 +47,7 @@ Virtualización - Virtualbox - Vagrant https://en.wikipedia.org/wiki/Virtualizat
   crossorigin="anonymous"></script>
 
   </head>
-  <body class="td-page">
+  <body class="td-section">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -91,18 +82,68 @@ Virtualización - Virtualbox - Vagrant https://en.wikipedia.org/wiki/Virtualizat
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-despliegue-aplicaciones-webdocs-li">
   <a href="/despliegue-aplicaciones-web/docs/" title="Despliegue de Aplicaciones Web" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-despliegue-aplicaciones-webdocs"><span class="">DAW</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-despliegue-aplicaciones-webdocsentorno-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-despliegue-aplicaciones-webdocsentorno-li">
   <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentorno-check" checked/>
-  <label for="m-despliegue-aplicaciones-webdocsentorno-check"><a href="/despliegue-aplicaciones-web/docs/entorno/" title="Entorno - Vagrant" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsentorno"><span class="td-sidebar-nav-active-item">Vagrant</span></a></label>
+  <label for="m-despliegue-aplicaciones-webdocsentorno-check"><a href="/despliegue-aplicaciones-web/docs/entorno/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsentorno"><span class="td-sidebar-nav-active-item">Entorno</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsgit-versiones-li">
-  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsgit-versiones-check"/>
-  <label for="m-despliegue-aplicaciones-webdocsgit-versiones-check"><a href="/despliegue-aplicaciones-web/docs/git-versiones/" title="Git - Gestores de versiones" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsgit-versiones"><span class="">Git</span></a></label>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsentornovagrant-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentornovagrant-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentornovagrant-check"><a href="/despliegue-aplicaciones-web/docs/entorno/vagrant/" title="Entorno - Vagrant" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsentornovagrant"><span class="">Vagrant</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocspractica-vagrant-li">
-  <input type="checkbox" id="m-despliegue-aplicaciones-webdocspractica-vagrant-check"/>
-  <label for="m-despliegue-aplicaciones-webdocspractica-vagrant-check"><a href="/despliegue-aplicaciones-web/docs/practica-vagrant/" title="Práctica - Vagrant" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocspractica-vagrant"><span class="">Práctica Vagrant</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsentornogit-versiones-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentornogit-versiones-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentornogit-versiones-check"><a href="/despliegue-aplicaciones-web/docs/entorno/git-versiones/" title="Git - Gestores de versiones" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsentornogit-versiones"><span class="">Git</span></a></label>
   
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsentornopractica-vagrant-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentornopractica-vagrant-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentornopractica-vagrant-check"><a href="/despliegue-aplicaciones-web/docs/entorno/practica-vagrant/" title="Práctica - Vagrant" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsentornopractica-vagrant"><span class="">Práctica Vagrant</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsentornodocker-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentornodocker-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentornodocker-check"><a href="/despliegue-aplicaciones-web/docs/entorno/docker/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsentornodocker"><span class="">Docker</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-despliegue-aplicaciones-webdocsteoria-web-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-web-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-web-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsteoria-web"><span class="">Teoría Web</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webinternet-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webinternet-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webinternet-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/internet/" title="Cómo funciona Internet" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webinternet"><span class="">Internet</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webdns-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webdns-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webdns-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/dns/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webdns"><span class="">DNS</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webhttp-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webhttp-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webhttp-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/http/" title="Hyper Text Transfer Protocol" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webhttp"><span class="">http</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webrequests-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webrequests-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webrequests-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/requests/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsteoria-webrequests"><span class="">Requests</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webresponses-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webresponses-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webresponses-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/responses/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webresponses"><span class="">Responses</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webmensajes-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webmensajes-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webmensajes-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/mensajes/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webmensajes"><span class="">Mensajes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-websesion-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-websesion-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-websesion-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/sesion/" title="Sesión http típica" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-websesion"><span class="">Sesión</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/como-funciona-internet/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet"><span class=""></span></a></label>
+  
+</li>
+  </ul>
 </li>
   </ul>
 </li>
@@ -115,14 +156,6 @@ Virtualización - Virtualbox - Vagrant https://en.wikipedia.org/wiki/Virtualizat
             
             
 
-
-<div class="td-toc"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#virtualización---virtualbox---vagrant">Virtualización - Virtualbox - Vagrant</a></li>
-    <li><a href="#introduccíón-a-virtualbox">Introduccíón a Virtualbox</a></li>
-    <li><a href="#introducción-a-vagrant">Introducción a Vagrant</a></li>
-  </ul>
-</nav></div>
 
 
 
@@ -157,14 +190,14 @@ Virtualización - Virtualbox - Vagrant https://en.wikipedia.org/wiki/Virtualizat
     <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/">DAW</a>
   </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/" aria-disabled="true" class="btn-link disabled">Vagrant</a>
+    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/" aria-disabled="true" class="btn-link disabled">Entorno</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Entorno - Vagrant</h1>
-	
+	<h1>Entorno</h1>
+  <div class="lead">Configuración del entorno de trabajo básico</div>
 	<header class="article-meta">
 		
 
@@ -179,50 +212,58 @@ Virtualización - Virtualbox - Vagrant https://en.wikipedia.org/wiki/Virtualizat
   
 
 		
-	</header>    
+	</header>
 	
-
-<div class="pageinfo pageinfo-primary">
-<h3 id="objetivos">Objetivos:</h3>
-<ul>
-<li>¿Cómo podemos tener un sistema para desarrollar una aplicación que sea el mismo que se va a usar en producción?</li>
-<li>¿Cómo replicar un servidor si tenemos que moverlo a otra máquina? ¿Hay que hacerlo a mano perdiendo varias horas y arriesgándonos a cometer errores?</li>
-</ul>
-
+        <div class="section-index">
+    
+    
+    
+    
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/despliegue-aplicaciones-web/docs/entorno/vagrant/">Entorno - Vagrant</a>
+                </h5>
+                <p>Configuración del entorno de trabajo básico con Vagrant y VirtualBox</p>
+            </div>
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/despliegue-aplicaciones-web/docs/entorno/git-versiones/">Git - Gestores de versiones</a>
+                </h5>
+                <p>Gestión de versiones con Git y GitHub</p>
+            </div>
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/despliegue-aplicaciones-web/docs/entorno/practica-vagrant/">Práctica - Vagrant</a>
+                </h5>
+                <p>Práctica de Vagrant guiada</p>
+            </div>
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/despliegue-aplicaciones-web/docs/entorno/docker/">Docker</a>
+                </h5>
+                <p>En construcción</p>
+            </div>
+        
+    
 </div>
 
-<p>De <strong>virtualización</strong> y de <strong>Virtualbox</strong> ya habéis oído hablar en el módulo de sistemas operativos.</p>
-<h2 id="virtualización---virtualbox---vagrant">Virtualización - Virtualbox - Vagrant</h2>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Virtualization">https://en.wikipedia.org/wiki/Virtualization</a></li>
-</ul>
-<h2 id="introduccíón-a-virtualbox">Introduccíón a Virtualbox</h2>
-<ul>
-<li><a href="https://www.oracle.com/es/virtualization/virtualbox/">https://www.oracle.com/es/virtualization/virtualbox/</a></li>
-<li><a href="https://www.oracle.com/a/ocom/docs/virtualbox-for-dummies.pdf">https://www.oracle.com/a/ocom/docs/virtualbox-for-dummies.pdf</a></li>
-</ul>
-<h2 id="introducción-a-vagrant">Introducción a Vagrant</h2>
-<blockquote>
-<p>Lectura recomendada: <a href="https://automationrhapsody.com/what-is-vagrant-and-why-to-use-it/">https://automationrhapsody.com/what-is-vagrant-and-why-to-use-it/</a></p>
-</blockquote>
-<ul>
-<li><a href="https://www.vagrantup.com/">https://www.vagrantup.com/</a></li>
-<li><a href="https://desarrolloweb.com/articulos/trabajar-con-vagrant.html">https://desarrolloweb.com/articulos/trabajar-con-vagrant.html</a></li>
-</ul>
-<p><strong>Vagrant</strong> es una herramienta para construir y administrar entornos de máquinas virtuales.</p>
-<p>Con un flujo de trabajo fácil de usar y un enfoque en la automatización, Vagrant reduce el tiempo de configuración del entorno de desarrollo, aumenta la paridad de producción y hace que la excusa &ldquo;funciona en mi máquina&rdquo; sea una reliquia del pasado. Vagrant es conveniente para compartir la configuración y configuración del entorno virtual.</p>
-<p>Vagrant <strong>no proporciona motores de virtualización</strong>, sino que se basa en otros:  VirtualBox (proveedor predeterminado), VMWare , Hyper-V o Docker.</p>
-<p>Con Vagrant podemos instalar y activar una máquina virtual, configurarla e instala el software necesario. Todas esas acciones se describen en un solo archivo de texto (<code>Vagrantfile</code>), que se puede compartir entre los miembros del equipo, lo que permite que todos tengan la misma configuración.</p>
-<p>Vagrant permite compartir configuraciones entre los miembros del equipo para facilitar la puesta en marcha de un entorno de trabajo.</p>
-
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">
-  Última modificación October 17, 2022: <a href="https://github.com/lmorillas/dwes/commit/1bd41812dab43b37581f5a35d8e6b8a663a23d49">vagrant (1bd4181)</a>
+	
 </div>
-
-</div>
-
 
           </main>
         </div>

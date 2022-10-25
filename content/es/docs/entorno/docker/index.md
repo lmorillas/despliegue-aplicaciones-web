@@ -1,19 +1,16 @@
 ---
 title: "Docker"
-linkTitle: "Docker"
+linkTitle: "Docker (borrador)"
 weight: 0
 date: 2021-09-15
 description: >
-    Docker. Fuente https://github.com/rafacabeza/dws
+    Estado de este bloque: Borrador <br>
+
+    Fuente https://github.com/rafacabeza/dws
 draft: true
 --- 
 
-# Uso de docker en DAW
-
-
-
 # Virtualización: introducción
-
 
 ## Virtualización tradicional
 - Es una abstracción de la capa de hardware
@@ -28,14 +25,12 @@ draft: true
 ## Hypervisor
 
 - Es un monitor que orquesta el acceso de varios SO a los recursos de un servidor físico.
-  ![](./images/hypervisor-types.png)
-
+  ![hypervisor](img/hypervisor-types.png)
 
 ## Hypervisor type 1
 - Nativo o Bare Metal Hypervisor
 - Corre directamente en el hardware de la  máquina, hacen la  función de HAL (Hardware Abstraction Layer)
 - Ej: VMWare ESXI, Microsoft Hyper-V, Citrix/Xen Server 
-
 
 ## Hypervisor type 2
 
@@ -52,10 +47,9 @@ draft: true
 
 - Son una abstracción de la capa de aplicación
 
-![](./images/containers-arquitecture.png)
+![Contenedores](img/containers-arquitecture.png)
 
-
-## Ventajas contenedores
+### Características:
 
 - Más ligeros
   - Portabilidad
@@ -64,24 +58,15 @@ draft: true
   - Mas eficientes -> menor coste
 - Son efímeros
 
-
-## Desventajas
-
-- Menor seguridad y aislamiento
-  - Depende del host  
-- Snapshots
-- Migraciones en caliente (VMWare vMotion)
-- Son efímeros
-
-
 ##  Google Trends
 
-![](img/google-trends.png)
+{{< rawhtml >}}
 
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3045_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"docker","geo":"ES","time":"2004-01-01 2022-10-25"},{"keyword":"/m/027q8xw","geo":"ES","time":"2004-01-01 2022-10-25"},{"keyword":"/m/0jwtqm2","geo":"ES","time":"2004-01-01 2022-10-25"},{"keyword":"/g/11b7lxp79d","geo":"ES","time":"2004-01-01 2022-10-25"},{"keyword":"/m/01t9k5","geo":"ES","time":"2004-01-01 2022-10-25"}],"category":0,"property":""}, {"exploreQuery":"date=2004-01-01%202022-10-25&geo=ES&q=docker,%2Fm%2F027q8xw,%2Fm%2F0jwtqm2,%2Fg%2F11b7lxp79d,%2Fm%2F01t9k5","guestPath":"https://trends.google.es:443/trends/embed/"}); </script>
 
+{{< /rawhtml >}}
 
 # Docker
-
 
 ## Qué es Docker
 
@@ -153,11 +138,9 @@ EXPOSE 80
 - El uso de contendeores linux requiere instalar LSW, Linux Subsystem for Windows. Es decir, poner un kernel linux a disposición de docker.
 
 
-
 # Instalación
 
 - Dejo estas notas aunque no explicamos nada. Nosotros ya tenemos instalado docker.
-
 
 ## Versiones de Docker
 -  Hasta el 2019 había dos productos: 

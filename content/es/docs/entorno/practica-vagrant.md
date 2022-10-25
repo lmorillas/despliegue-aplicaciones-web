@@ -4,7 +4,8 @@ title: "Práctica - Vagrant"
 linkTitle: "Práctica Vagrant"
 weight: 10
 date: 2021-09-15
-description: 
+description: >
+    Práctica de Vagrant guiada
   
 ---
 

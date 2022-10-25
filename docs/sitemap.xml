@@ -2,17 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/</loc>
-    <lastmod>2022-10-17T16:07:17+02:00</lastmod>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/internet/</loc>
+    <lastmod>2021-10-21T10:29:17+02:00</lastmod>
   </url><url>
-    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/git-versiones/</loc>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/practica-vagrant/</loc>
-    <lastmod>2022-10-17T16:07:17+02:00</lastmod>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/dns/</loc>
+    <lastmod>2021-10-21T10:29:17+02:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/http/</loc>
+    <lastmod>2021-10-21T10:29:17+02:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/</loc>
+    <lastmod>2021-10-21T10:29:17+02:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/vagrant/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/git-versiones/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/requests/</loc>
+    <lastmod>2021-10-21T10:36:54+02:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/responses/</loc>
+    <lastmod>2021-10-21T10:36:54+02:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/practica-vagrant/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/mensajes/</loc>
+    <lastmod>2021-10-21T10:36:54+02:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/sesion/</loc>
+    <lastmod>2021-10-21T10:36:54+02:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/como-funciona-internet/</loc>
+    <lastmod>2021-10-21T10:36:54+02:00</lastmod>
   </url><url>
     <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/</loc>
     <lastmod>2022-10-17T16:07:17+02:00</lastmod>
+  </url><url>
+    <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/docker/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lmorillas.github.io/despliegue-aplicaciones-web/categories/</loc>
   </url><url>

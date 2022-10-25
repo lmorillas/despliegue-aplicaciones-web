@@ -4,7 +4,9 @@ title: "Git - Gestores de versiones"
 linkTitle: "Git"
 weight: 8
 date: 2021-09-15
-description: 
+description: >
+    Gestión de versiones con Git y GitHub
+    
   
 ---
 
