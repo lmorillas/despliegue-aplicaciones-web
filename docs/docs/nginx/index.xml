@@ -1,0 +1,65 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Despliegue de Aplicaciones Web – Nginx</title>
+    <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/</link>
+    <description>Recent content in Nginx on Despliegue de Aplicaciones Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Virtual Host</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/virtualhost/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/virtualhost/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/&#34;&gt;Virtual Host&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nginx.org/en/docs/http/server_names.html&#34;&gt;Virtual Host&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Configuración SSL</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/ssl/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/ssl/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nginx.org/en/docs/http/configuring_https_servers.html&#34;&gt;Configuración SSL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

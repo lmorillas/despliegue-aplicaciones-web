@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.103.1" />
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/despliegue-aplicaciones-web/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/despliegue-aplicaciones-web/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/despliegue-aplicaciones-web/favicons/android-192x192.png" sizes="192x192">
+
+<title>Configuración SSL | Despliegue de Aplicaciones Web</title>
+<meta name="description" content="Configuración de SSL para Nginx.
+">
+<meta property="og:title" content="Configuración SSL" />
+<meta property="og:description" content="Configuración de SSL para Nginx.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/ssl/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2021-09-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-11-22T12:42:00+01:00" /><meta property="og:site_name" content="Despliegue de Aplicaciones Web" />
+
+<meta itemprop="name" content="Configuración SSL">
+<meta itemprop="description" content="Configuración de SSL para Nginx.
+"><meta itemprop="datePublished" content="2021-09-15T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-22T12:42:00+01:00" />
+<meta itemprop="wordCount" content="3">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Configuración SSL"/>
+<meta name="twitter:description" content="Configuración de SSL para Nginx.
+"/>
+
+
+
+
+<link rel="preload" href="/despliegue-aplicaciones-web/scss/main.min.6f9a61915ae86417164c61d275528c590ac6e5f9dadf5e49cacc7e18108a8014.css" as="style">
+<link href="/despliegue-aplicaciones-web/scss/main.min.6f9a61915ae86417164c61d275528c590ac6e5f9dadf5e49cacc7e18108a8014.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/despliegue-aplicaciones-web/">
+		<span class="navbar-logo"></span><span class="font-weight-bold">Despliegue de Aplicaciones Web</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block"></div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="collapse td-sidebar-nav foldable-nav" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-despliegue-aplicaciones-webdocs-li">
+  <a href="/despliegue-aplicaciones-web/docs/" title="Despliegue de Aplicaciones Web" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-despliegue-aplicaciones-webdocs"><span class="">DAW</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-despliegue-aplicaciones-webdocsentorno-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentorno-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentorno-check"><a href="/despliegue-aplicaciones-web/docs/entorno/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsentorno"><span class="">Entorno</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsentornovagrant-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentornovagrant-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentornovagrant-check"><a href="/despliegue-aplicaciones-web/docs/entorno/vagrant/" title="Entorno - Vagrant" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsentornovagrant"><span class="">Vagrant</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsentornogit-versiones-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentornogit-versiones-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentornogit-versiones-check"><a href="/despliegue-aplicaciones-web/docs/entorno/git-versiones/" title="Git - Gestores de versiones" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsentornogit-versiones"><span class="">Git</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsentornopractica-vagrant-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentornopractica-vagrant-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentornopractica-vagrant-check"><a href="/despliegue-aplicaciones-web/docs/entorno/practica-vagrant/" title="Práctica - Vagrant" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsentornopractica-vagrant"><span class="">Práctica Vagrant</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsentornodocker-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsentornodocker-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsentornodocker-check"><a href="/despliegue-aplicaciones-web/docs/entorno/docker/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsentornodocker"><span class="">Docker</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-despliegue-aplicaciones-webdocsteoria-web-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-web-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-web-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsteoria-web"><span class="">Teoría Web</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webinternet-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webinternet-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webinternet-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/internet/" title="Cómo funciona Internet" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webinternet"><span class="">Internet</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webdns-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webdns-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webdns-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/dns/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webdns"><span class="">DNS</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webhttp-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webhttp-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webhttp-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/http/" title="Hyper Text Transfer Protocol" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webhttp"><span class="">http</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webrequests-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webrequests-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webrequests-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/requests/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsteoria-webrequests"><span class="">Requests</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webresponses-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webresponses-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webresponses-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/responses/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webresponses"><span class="">Responses</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webmensajes-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webmensajes-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webmensajes-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/mensajes/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webmensajes"><span class="">Mensajes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-websesion-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-websesion-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-websesion-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/sesion/" title="Sesión http típica" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-websesion"><span class="">Sesión</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet-check"><a href="/despliegue-aplicaciones-web/docs/teoria-web/como-funciona-internet/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsteoria-webcomo-funciona-internet"><span class=""></span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-despliegue-aplicaciones-webdocsapache-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsapache-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsapache-check"><a href="/despliegue-aplicaciones-web/docs/apache/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsapache"><span class="">Apache</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsapachevirtualhost-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsapachevirtualhost-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsapachevirtualhost-check"><a href="/despliegue-aplicaciones-web/docs/apache/virtualhost/" title="Virtual Host" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsapachevirtualhost"><span class="">Virtualhost</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsapachessl-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsapachessl-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsapachessl-check"><a href="/despliegue-aplicaciones-web/docs/apache/ssl/" title="Configuración SSL" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsapachessl"><span class="">SSL</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-despliegue-aplicaciones-webdocsnginx-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsnginx-check" checked/>
+  <label for="m-despliegue-aplicaciones-webdocsnginx-check"><a href="/despliegue-aplicaciones-web/docs/nginx/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-despliegue-aplicaciones-webdocsnginx"><span class="">Nginx</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-despliegue-aplicaciones-webdocsnginxvirtualhost-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsnginxvirtualhost-check"/>
+  <label for="m-despliegue-aplicaciones-webdocsnginxvirtualhost-check"><a href="/despliegue-aplicaciones-web/docs/nginx/virtualhost/" title="Virtual Host" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsnginxvirtualhost"><span class="">Virtualhost</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-despliegue-aplicaciones-webdocsnginxssl-li">
+  <input type="checkbox" id="m-despliegue-aplicaciones-webdocsnginxssl-check" checked/>
+  <label for="m-despliegue-aplicaciones-webdocsnginxssl-check"><a href="/despliegue-aplicaciones-web/docs/nginx/ssl/" title="Configuración SSL" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-despliegue-aplicaciones-webdocsnginxssl"><span class="td-sidebar-nav-active-item">SSL</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+            
+
+
+
+
+            
+
+	
+		
+
+
+
+  
+  
+
+	
+		
+
+
+
+  
+  
+
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/">DAW</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/">Nginx</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/ssl/" aria-disabled="true" class="btn-link disabled">SSL</a>
+  </li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Configuración SSL</h1>
+	<div class="lead">Configuración de SSL para Nginx.</div>
+	<header class="article-meta">
+		
+
+  
+    
+
+
+  
+    
+
+
+  
+
+		
+	</header>    
+	
+
+<div class="pageinfo pageinfo-primary">
+<h2 id="documentación">Documentación:</h2>
+<ul>
+<li><a href="https://nginx.org/en/docs/http/configuring_https_servers.html">Configuración SSL</a></li>
+</ul>
+
+</div>
+
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">
+  Última modificación November 22, 2022: <a href="https://github.com/lmorillas/dwes/commit/db76e87f41df3481468dc0dd10efda7deba201a3">nginx (db76e87)</a>
+</div>
+
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2022 @lmorillas Derechos reservados</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></small>
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+    crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.13.4/dist/mermaid.min.js" integrity="sha512-JERecFUBbsm75UpkVheAuDOE8NdHjQBrPACfEQYPwvPG+fjgCpHAz1Jw2ci9EXmd3DdfiWth3O3CQvcfEg8gsA==" crossorigin="anonymous"></script>
+
+
+
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: { manual: true },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/despliegue-aplicaciones-web/js/main.min.2498f9c3dd216c51817d4d14cc1ce7a83b4ed4fad397fe3c6c8133674405b2e6.js" integrity="sha256-JJj5w90hbFGBfU0UzBznqDtO1PrTl/48bIEzZ0QFsuY=" crossorigin="anonymous"></script>
+
+
+
+
+    <script src="/despliegue-aplicaciones-web/js/desactivanav.js" > 
+</script>
+  </body>
+</html>

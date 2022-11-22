@@ -1,0 +1,510 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Despliegue de Aplicaciones Web – Despliegue de Aplicaciones Web</title>
+    <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/</link>
+    <description>Recent content on Despliegue de Aplicaciones Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://lmorillas.github.io/despliegue-aplicaciones-web/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Cómo funciona Internet</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/internet/</link>
+      <pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/internet/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;contenidos&#34;&gt;Contenidos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Visión general de internet&lt;/li&gt;
+&lt;li&gt;Servicios y protocolos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7_LPdttKXPc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://lmorillas.github.io/despliegue-aplicaciones-web/despliegue-aplicaciones-web/docs/teoria-web/como-funciona-internet/&#34;&gt;Traducción automática&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tarea&#34;&gt;Tarea&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ve el vídeo anterior. Si no lo entiende bien, sigue la traducción que adjuntamos. Tiene errores porque es una traducción automática. Puedes mejorarla.&lt;/li&gt;
+&lt;li&gt;Si tienes dudas, pregunta en el foro.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: DNS</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/dns/</link>
+      <pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/dns/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;contenidos&#34;&gt;Contenidos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;DNS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;conceptos-básicos-de-dns&#34;&gt;Conceptos básicos de DNS&lt;/h2&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://d1.awsstatic.com/Route53/how-route-53-routes-traffic.8d313c7da075c3c7303aaef32e89b5d0b7885e7c.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;Ejemplo de AWS 53&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Domain_Name_System&#34;&gt;DNS en Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/es/route53/what-is-dns/&#34;&gt;Conceptos básicos de DNS - AWS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html&#34;&gt;Cómo funciona DNS - AWS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53-concepts.html&#34;&gt;Conceptos DNS - AWS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Hosts_(file)&#34;&gt;Archivo hosts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;herramientas&#34;&gt;Herramientas&lt;/h2&gt;
+&lt;h3 id=&#34;dig&#34;&gt;dig&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.hostinger.es/tutoriales/comando-dig-linux&#34;&gt;https://www.hostinger.es/tutoriales/comando-dig-linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tareas&#34;&gt;Tareas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lee los artículos que te indicamos.&lt;/li&gt;
+&lt;li&gt;Comprueba si la máquina virtual que has instalado tiene el comando &lt;code&gt;dig&lt;/code&gt; instalado. Si no lo tiene, instálalo como se explica en el artículo anterior.&lt;/li&gt;
+&lt;li&gt;Ejecuta los ejemplos del artículo anterior usando como referencia el nombre de la web del curso &lt;code&gt;https://www.adistanciafparagon.es/&lt;/code&gt; . Anota los comandos que usas y sus resultados en un archivo markdown. Lo usarás más adelante.&lt;/li&gt;
+&lt;li&gt;Crea una entrada en el archivo hosts de tu ordenador para que cuando se acceda a la dirección &lt;code&gt;miservidor.local&lt;/code&gt; se redirija a la dirección &lt;code&gt;localhost&lt;/code&gt; o &lt;code&gt;127.0.0.1&lt;/code&gt;. Comprueba que funciona.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Hyper Text Transfer Protocol</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/http/</link>
+      <pubDate>Thu, 21 Oct 2021 10:29:17 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/http/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;contenidos&#34;&gt;Contenidos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;protocolo HTTP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;documentación-base&#34;&gt;Documentación base&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol&#34;&gt;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;capas&#34;&gt;Capas&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/http-layers.png&#34; alt=&#34;Capas de la web. Fuente Mozilla&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;componentes&#34;&gt;Componentes&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/client-server-chain.png&#34; alt=&#34;Componentes&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cliente&lt;/li&gt;
+&lt;li&gt;Servidor Web&lt;/li&gt;
+&lt;li&gt;Proxies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tareas&#34;&gt;Tareas&lt;/h2&gt;
+&lt;p&gt;Lee los dors artículos de la documentación. Si tienes problemas al leer en inglés, usa la versión correspondiente en castellano.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Entorno - Vagrant</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/vagrant/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/vagrant/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h3 id=&#34;objetivos&#34;&gt;Objetivos:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;¿Cómo podemos tener un sistema para desarrollar una aplicación que sea el mismo que se va a usar en producción?&lt;/li&gt;
+&lt;li&gt;¿Cómo replicar un servidor si tenemos que moverlo a otra máquina? ¿Hay que hacerlo a mano perdiendo varias horas y arriesgándonos a cometer errores?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;De &lt;strong&gt;virtualización&lt;/strong&gt; y de &lt;strong&gt;Virtualbox&lt;/strong&gt; ya habéis oído hablar en el módulo de sistemas operativos.&lt;/p&gt;
+&lt;h2 id=&#34;virtualización---virtualbox---vagrant&#34;&gt;Virtualización - Virtualbox - Vagrant&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Virtualization&#34;&gt;https://en.wikipedia.org/wiki/Virtualization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduccíón-a-virtualbox&#34;&gt;Introduccíón a Virtualbox&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.oracle.com/es/virtualization/virtualbox/&#34;&gt;https://www.oracle.com/es/virtualization/virtualbox/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.oracle.com/a/ocom/docs/virtualbox-for-dummies.pdf&#34;&gt;https://www.oracle.com/a/ocom/docs/virtualbox-for-dummies.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introducción-a-vagrant&#34;&gt;Introducción a Vagrant&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lectura recomendada: &lt;a href=&#34;https://automationrhapsody.com/what-is-vagrant-and-why-to-use-it/&#34;&gt;https://automationrhapsody.com/what-is-vagrant-and-why-to-use-it/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;https://www.vagrantup.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://desarrolloweb.com/articulos/trabajar-con-vagrant.html&#34;&gt;https://desarrolloweb.com/articulos/trabajar-con-vagrant.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Vagrant&lt;/strong&gt; es una herramienta para construir y administrar entornos de máquinas virtuales.&lt;/p&gt;
+&lt;p&gt;Con un flujo de trabajo fácil de usar y un enfoque en la automatización, Vagrant reduce el tiempo de configuración del entorno de desarrollo, aumenta la paridad de producción y hace que la excusa &amp;ldquo;funciona en mi máquina&amp;rdquo; sea una reliquia del pasado. Vagrant es conveniente para compartir la configuración y configuración del entorno virtual.&lt;/p&gt;
+&lt;p&gt;Vagrant &lt;strong&gt;no proporciona motores de virtualización&lt;/strong&gt;, sino que se basa en otros:  VirtualBox (proveedor predeterminado), VMWare , Hyper-V o Docker.&lt;/p&gt;
+&lt;p&gt;Con Vagrant podemos instalar y activar una máquina virtual, configurarla e instala el software necesario. Todas esas acciones se describen en un solo archivo de texto (&lt;code&gt;Vagrantfile&lt;/code&gt;), que se puede compartir entre los miembros del equipo, lo que permite que todos tengan la misma configuración.&lt;/p&gt;
+&lt;p&gt;Vagrant permite compartir configuraciones entre los miembros del equipo para facilitar la puesta en marcha de un entorno de trabajo.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Virtual Host</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/apache/virtualhost/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/apache/virtualhost/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://httpd.apache.org/docs/2.4/vhosts/&#34;&gt;Virtual Host&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Virtual Host</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/virtualhost/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/virtualhost/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/&#34;&gt;Virtual Host&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nginx.org/en/docs/http/server_names.html&#34;&gt;Virtual Host&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Git - Gestores de versiones</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/git-versiones/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/git-versiones/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h3 id=&#34;objetivos&#34;&gt;Objetivos:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Repaso gestores de versiones de código.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;recursos&#34;&gt;Recursos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introducción de Mozilla: &lt;a href=&#34;https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/GitHub&#34;&gt;https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chuleta sencilla: &lt;a href=&#34;https://training.github.com/downloads/es_ES/github-git-cheat-sheet/&#34;&gt;https://training.github.com/downloads/es_ES/github-git-cheat-sheet/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Guía sencilla: &lt;a href=&#34;https://rogerdudler.github.io/git-guide/index.es.html&#34;&gt;https://rogerdudler.github.io/git-guide/index.es.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Documentación del MIT: &lt;a href=&#34;https://missing.csail.mit.edu/2020/version-control/&#34;&gt;https://missing.csail.mit.edu/2020/version-control/&lt;/a&gt; (en castellano: &lt;a href=&#34;https://missing-semester-esp.github.io/2020/version-control-esp/&#34;&gt;https://missing-semester-esp.github.io/2020/version-control-esp/&lt;/a&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;secuencia&#34;&gt;Secuencia&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lee la introducción de Mozilla.&lt;/li&gt;
+&lt;li&gt;Instala git en tu ordenador.&lt;/li&gt;
+&lt;li&gt;Crea una cuenta en &lt;a href=&#34;https://github.com&#34;&gt;https://github.com&lt;/a&gt; si no la tienes.&lt;/li&gt;
+&lt;li&gt;Completa la actividad sobre git / github de este curso&lt;/li&gt;
+&lt;li&gt;El resto de la documentación te servirá para ampliar y resolver dudas.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Responses</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/responses/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/responses/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Documentación&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#responses&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#responses&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;responses-consist-of-the-following-elements&#34;&gt;Responses consist of the following elements:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;La versión del protocolo HTTP que están usando.&lt;/li&gt;
+&lt;li&gt;Un código de estado: exito (200), error (404), redirección (301), etc.&lt;/li&gt;
+&lt;li&gt;Un mensaje de estado, una breve descripción del código de estado.&lt;/li&gt;
+&lt;li&gt;Cabeceras HTTP, como las de las peticiones.&lt;/li&gt;
+&lt;li&gt;Opcionalmente, el recurso que se ha pedido.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tarea&#34;&gt;Tarea&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lee el artículo de Mozilla&lt;/li&gt;
+&lt;li&gt;Busca ejemplos de códigos de respuesta diferentes: 200, 301, 403, 404 y 500. ¿Qué significan estos códigos?&lt;/li&gt;
+&lt;li&gt;Si no encuentras alguno de los códigos, pregunta en el foro. Algún compañero te ayudará.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Práctica - Vagrant</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/practica-vagrant/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/entorno/practica-vagrant/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h3 id=&#34;objetivos&#34;&gt;Objetivos:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Instalar una máquina básica usando Vagrant - Virtualbox&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;requisitos&#34;&gt;Requisitos&lt;/h2&gt;
+&lt;p&gt;Instala Virtualbox y Vagrant en tu máquina&lt;/p&gt;
+&lt;h2 id=&#34;instalar-una-máquina-ubuntu-2204&#34;&gt;Instalar una máquina Ubuntu 22.04&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Crea un directorio para tu proyecto&lt;/li&gt;
+&lt;li&gt;Dentro de ese diretorio ejecuta:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vagrant init bento/ubuntu-22.04
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Revisa el contenido del archivo &lt;code&gt;Vagrantfile&lt;/code&gt; que se ha creado&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Pon en marcha la máquina virtual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;gt;&lt;/span&gt; vagrant up
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Revisa el contenido del log para ver que todo ha funcionado correctamente&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Conecta por ssh con la máquina virtual creada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;gt;&lt;/span&gt; vagrant ssh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Comprueba el contenido del directorio &lt;code&gt;/vagrant&lt;/code&gt; de la máquina virtual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ls /vagrant
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Vagrant de forma automática mapea el directorio local de la máquina host con el directorio &lt;code&gt;/vagrant&lt;/code&gt; de la máquina virtual&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Sal de la máquina virtual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ exit&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Apaga la máquina virtual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;gt;&lt;/span&gt; vagrant halt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Mensajes</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/mensajes/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/mensajes/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;tarea&#34;&gt;Tarea&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lee el recurso&lt;/li&gt;
+&lt;li&gt;Busca ejemplos de los mensajes HTTP con las DevTools, al menos 3 con GET y uno con POST.&lt;/li&gt;
+&lt;li&gt;Copia un header completo y explica el significado de cada uno de los campos (en la petición y en la respuesta).&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Configuración SSL</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/apache/ssl/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/apache/ssl/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html&#34;&gt;Configuración SSL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://httpd.apache.org/docs/2.4/ssl/ssl_faq.html#realcert&#34;&gt;https://httpd.apache.org/docs/2.4/ssl/ssl_faq.html#realcert&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Configuración SSL</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/ssl/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/nginx/ssl/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nginx.org/en/docs/http/configuring_https_servers.html&#34;&gt;Configuración SSL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sesión http típica</title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/sesion/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/sesion/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;documentación&#34;&gt;Documentación&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Session&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Session&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Establecer conexión&lt;/li&gt;
+&lt;li&gt;Enviar ls petición del cliente
+&lt;ul&gt;
+&lt;li&gt;Importante: métodos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Respuesta del servidor
+&lt;ul&gt;
+&lt;li&gt;Códigos de estado&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tarea&#34;&gt;Tarea&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lee el recurso&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;compruébalo-con-las-devtools&#34;&gt;Compruébalo con las DevTools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Código 301 -&amp;gt; &lt;a href=&#34;http://cpilosenlaces.com/&#34;&gt;http://cpilosenlaces.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Código 200 -&amp;gt; &lt;a href=&#34;https://cpilosenlaces.com/&#34;&gt;https://cpilosenlaces.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Código 404 -&amp;gt; &lt;a href=&#34;https://cpilosenlaces.com/paginaquenoexiste&#34;&gt;https://cpilosenlaces.com/paginaquenoexiste&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/como-funciona-internet/</link>
+      <pubDate>Thu, 21 Oct 2021 10:36:54 +0200</pubDate>
+      
+      <guid>https://lmorillas.github.io/despliegue-aplicaciones-web/docs/teoria-web/como-funciona-internet/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;traducción-automática-de-los-subtítulos&#34;&gt;Traducción automática de los subtítulos&lt;/h2&gt;
+&lt;p&gt;Entonces, ¿cómo funciona Internet? La mayoría de nosotros sabemos cómo usar Internet sin entender realmente cómo funciona. Algo así como la electricidad en su hogar. La usa todos los días, pero es posible que no entienda la mecánica detrás de ella y si la red eléctrica es difícil de entender. entonces Internet debe ser imposible bien mal en los próximos minutos lo pondré en el 10 por ciento superior de las personas que entienden cómo funciona realmente Internet para catalizador de seguridad. com Soy Aaron Titus cuando la mayoría de la gente piensa en Internet esto es lo que me viene a la mente internet no es una nube burbuja incluso en la nueva era de la computación en la nube toda la imagen borrosa de la nube fue creada por personas más preocupadas por la seguridad laboral que por la educación.&lt;/p&gt;
+&lt;p&gt;Esto es internet. internet es un cable realmente enterrado en el tierra. Puede ser fibra óptica, de cobre u ocasionalmente transmisión a satélites o a través de redes de telefonía celular, pero Internet es simplemente un cable. Internet es útil porque las computadoras conectadas directamente a este cable pueden comunicarse.&lt;/p&gt;
+&lt;p&gt;Un servidor es una computadora especial conectada directamente a Internet y páginas web o archivos en el disco duro de ese servidor. Cada servidor tiene una dirección de Protocolo de Internet o dirección IP única, como una dirección postal. Las direcciones IP ayudan a las computadoras a encontrar entre sí, pero como 72.14.205.100 no sale exactamente de la lengua, también les damos nombres como google.com, facebook.com o security catalyst.com, así es como funciona. Su computadora en casa no es un servidor porque no lo es. conectadas directamente a Internet Las computadoras que usted y yo usamos todos los días se llaman clientes porque están conectadas indirectamente a Internet a través de un proveedor de servicios de Internet aquí vamos a fingir que esta es la computadora portátil de mi casa y estoy usando DSL ahora vamos a fingir que Quiero visitar aol.com, que casualmente es tanto un servidor como un ISP. Me subo a mi computadora portátil con DSL. Paso a través de mi ISP a Internet y miro AOL.com. Mi computadora se conecta. ts con aol.com y puedo mirar sus páginas web ahora digamos que quiero enviar un correo electrónico a la tía Ruth y Ruth tiene AOL marcado desde casa y tengo una cuenta de Gmail Me conecto a gmail.com y redacto un mensaje a la dirección de correo electrónico de la tía Ruth y Ruth aol.com una vez que hago clic en Enviar gmail.com envía el correo electrónico a aol.com al día siguiente. las computadoras dividen la información en partes más pequeñas llamadas paquetes cuando la información llega a su destino, los paquetes se vuelven a ensamblar en su orden original para crear una página web de correo electrónico de imagen o un tweet. en línea, su jefe está haciendo una investigación de mercado y usted está actualizando su perfil de Facebook, ambos están enviando paquetes de un lado a otro a través de Internet, pero ¿qué hay para evitar que sus paquetes terminen accidentalmente en la pantalla de su jefe que podría ser? Lo vergonzoso es que la solución a ese problema son las direcciones IP y los enrutadores. Todo lo que está conectado directa o indirectamente a Internet tiene una dirección IP. Todo lo que incluye los servidores de su computadora. pieza de equipo llamada enrutador los enrutadores dirigen sus paquetes por Internet ayudando a que cada paquete se acerque un paso más a su destino cada vez que visita un sitio web más de 10 a 15 enrutadores pueden ayudar a que sus paquetes encuentren el camino hacia y desde su computadora imagine cada paquete como un caramelo envuelto en varias capas, la primera capa es la dirección IP de su computadora, su computadora envía el paquete al primer enrutador, que agrega su propia dirección IP cada vez que el paquete llega a un nuevo enrutador, se agrega otra capa hasta que llega al servidor, luego cuando el servidor devuelve información, crea paquetes con un envoltorio idéntico al que hace el paquete En el camino a través de Internet de regreso a su computadora, cada enrutador desenvuelve una capa para descubrir dónde enviar el paquete a continuación hasta que llega a su computadora y no a sus jefes y así es como funciona Internet en cinco minutos o menos y ahora está fácilmente en el El 10 por ciento superior de las personas que entienden los conceptos básicos de Internet. Si este video le resultó útil, visite securitycatalist.com para obtener todo tipo de ideas sobre cómo proteger su información. Soy Aaron Titus (env).&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
